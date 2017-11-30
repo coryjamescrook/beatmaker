@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="paper-full.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<script type="text/paperscript" canvas="myCanvas">
 		var keyData = {
@@ -200,5 +201,13 @@
 </head>
 <body>
 	<canvas id="myCanvas" resize></canvas>
+	<div id="initMessage">
+		<h1>Start Typing... See What Happens</h1>
+	</div>
+	<script>
+		setTimeout(function() {
+		    $('#initMessage').fadeOut('3000');
+		}, 3000);
+	</script>
 </body>
 </html>
